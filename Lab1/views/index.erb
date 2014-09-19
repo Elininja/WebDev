@@ -1,0 +1,15 @@
+<h1>Hello, World!</h1>
+<p>If you're seeing this, it means that you've got your mom working properly. Nice job!</p>
+
+<form action='/' method='POST'>
+  <strong>New Task:</strong>
+  <input type='text' name='task' placeholder='task content' />
+  <input type='text' name='date' placeholder='due date' />
+  <input type='submit' value='Save'>
+</form>
+
+<ul>
+<% @lines.each do |line| %>
+<li> <%= line %> </li>
+<% end %>
+</ul>
