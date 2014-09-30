@@ -1,0 +1,28 @@
+h1 {
+  font-size: 48px;
+  font-family: times;
+  text-decoration: underline;
+}
+
+body {
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+  max-width: 800px;
+  margin: 32px auto;
+  background-color: green;
+  color: gold;
+}
+
+ul {
+  list-style-type: none;
+  color: cyan;
+}
+
+code {
+  display: inline-block;
+  font-size: inherit;
+  font-family: Menlo, Consolas, monaco, monospace;
+  border: 1px solid #777;
+  border-radius: 3px;
+  padding: 0 5px;
+}
