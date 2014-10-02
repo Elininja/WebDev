@@ -1,10 +1,12 @@
+<link rel="stylesheet" type="text/css" href="toDoStyle.css">
+
 <h1>Here's my To Do List!</h1>
 <p>Look at all my fancy CSS styling! B-)</p>
 
 <form action='/' method='POST'>
   <strong>New Task:</strong>
-  <input type='text' name='task' placeholder='task content' />
-  <input type='text' name='date' placeholder='due date' />
+  <input type='text' name='description' placeholder='task content' />
+  <input type='text' name='due_date' placeholder='due date' />
   <input type='submit' value='Save'>
 </form>
 
@@ -13,5 +15,3 @@
 <li> <%= line %> </li>
 <% end %>
 </ul>
-
-<link rel="stylesheet" type="text/css" href="toDoStyle.css">
