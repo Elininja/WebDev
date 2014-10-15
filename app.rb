@@ -13,8 +13,7 @@ ActiveRecord::Base.establish_connection(
 
 # define a route for the root of the site
 get '/' do
-	file = File.read("todo.txt")
-	@lines = file.split("\n")
+	@tasks = TodoItem.all
   # render the views/index.erb template
 	erb :index
 end
