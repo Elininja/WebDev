@@ -13,7 +13,7 @@
 </form>
 
 <ul>
-<% @lines.each do |line| %>
-<li> <%= line %> </li>
+<% @tasks.each do |task| %>
+<li> <%= task.description %> <|--Due--|> <%= task.due_date %> </li>
 <% end %>
 </ul>
