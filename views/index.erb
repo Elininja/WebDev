@@ -1,19 +1,20 @@
 <link rel="stylesheet" type="text/css" href="toDoStyle.css">
 
-<h1>Here's my To Do List!</h1>
+<h1>Welcome to the Murmuring Forest!</h1>
 <p>Look at all my fancy
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
    styling! B-)</p>
+<p>Also here's a To Do list:</p>
 
 <form action='/' method='POST'>
   <strong>New Task:</strong>
-  <input type='text' name='description' placeholder='task content' />
+  <input type='text' name='description' placeholder='description' />
   <input type='text' name='due_date' placeholder='due date' />
   <input type='submit' value='Save'>
 </form>
 
 <ul>
 <% @tasks.each do |task| %>
-<li> <%= task.description %> <|--Due--|> <%= task.due_date %> </li>
+<a href="/delete/<%= task.id %>">Done!</a> <li> <%= task.description %> <|--Due--|> <%= task.due_date %> </li>
 <% end %>
 </ul>

@@ -16,6 +16,13 @@ body {
 ul {
   list-style-type: none;
   color: cyan;
+  display: inline-block;
+}
+
+a {
+  color: indigo;
+  display: inline-block;
+  align: left;
 }
 
 code {

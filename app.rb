@@ -26,3 +26,8 @@ post '/' do
 	TodoItem.create(params)
 	redirect '/'
 end
+
+get '/delete/:id' do
+  TodoItem.find(params[:id]).destroy
+  redirect '/'
+end
