@@ -17,12 +17,13 @@ end
 
 # define a route for the root of the site
 get '/' do
-	@tasks = TodoItem.all
+	@tasks = TodoItem.all.order("due_date")
   # render the views/index.erb template
 	erb :index
 end
 
 post '/' do
+  # TodoItem.all.order("due_date")
 	TodoItem.create(params)
 	redirect '/'
 end
